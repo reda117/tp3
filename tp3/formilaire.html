@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Mon premier formulaire</title>
+
+
+</head>
+<body>
+
+	<h1>Votre avis Nous Intéresse</h1>
+	<TABLE>
+		<td>
+	<fieldset>
+		<legend>Information Personnels</legend>
+		<ol>
+		<li><label for="Nom">Nom </label><input type="Nom" name=""></li>
+        <li><label for="Date de naissance">Date de naissance </label><input type="date"min="1930-01-01" max="2021-12-31"></li>
+        <li><label for="Site">Site </label><input required type="url" placeholder="www.monsite.com"></li>
+        <li><label for="Emploi">Emploi <select> 
+        	<option></option>
+        	<option>Etudiant</option>
+        	<option>Administrateur Réseau</option>
+        	<option>Developpeur Web</option>
+        	<option>Web Designer</option>
+        	<option>DevOps</option>
+        </select>
+        </li>
+        <li><label for="Salaire">Approx.Salaire Annuel </label><br><input type="number" placeholder="$" step="1000" min="1000"></li>
+		</ol>
+
+	</fieldset>
+    </td>
+    <td>
+    	<fieldset>
+    	<legend>Information de Contact</legend> 
+    	<ol>
+    	<li><label for="Addresse">Addresse ligne 1 </label><br><input type="addresse" name="addresse"></li>
+        <li><label for="Addresse">Addresse ligne 2 </label><br><input type="addresse" ></li>
+    	<li><label for="Pays">Pays </label><select id="select">
+    		<option></option>
+    		<option>Algérie</option>
+    		<option>Tunisie</option>
+    		<option>Maroc</option>
+    	</select></li>
+    	<li><label for="Tel">Tel </label><input type="Tel" name="Tel" placeholder="eg +213 67"></li>
+    	<li><label for="Courriel">Courriel <input type="email" name="" placeholder=""></li>
+
+
+       </ol>
+    </fieldset>	
+</td>
+    </TABLE>
+    <div>
+    	<h1>Préférences</h1>
+    	<label>Choisir une couleur <input type="color" name="color"></label><br>
+    	<label for="echelle">Sur une échelle de 1 à 10 , quel est votre degré d'enthousiasme pour HTML5 ?</label><input required type="range" name="range" min="0" max="10" step="1" value="0"><br>
+    	<input type="button" name="submite" value="Envoyer">
+</body>
+</html>
